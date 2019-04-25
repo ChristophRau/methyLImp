@@ -55,7 +55,7 @@ summary(gse64495.mis)
 ## Impute the missing values with the methyLImp routine.
 ## Note that variables need to be on the columns and
 ## samples on the rows.
-gse64495.imp <- methyLImp(t(gse64495.mis),min=0,max=0)
+gse64495.imp <- methyLImp(t(gse64495.mis),min=0,max=1)
 gse64495.imp <- t(gse64495.imp)
 
 ## Compare imputed and original values
